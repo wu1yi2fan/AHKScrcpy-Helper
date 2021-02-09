@@ -5,9 +5,13 @@ AHKScrcpy Helper是一个基于AutoHotkey编写的小工具。旨在能够更加
 
 目前,AHKScrcpy Helper支持基本的主页、返回、菜单按钮的操控以及息屏投送。同时，Scrcpy还提供一些常用的应用的adb命令执行。你也可以根据提示手动输入需要执行的命令。
 
+AHKScrcpy Helper提供ahk版本和exe版本，可自由选择。
+
 # 使用方法
 
 从Scrcpy的Github页面下载Scrcpy并解压。然后将AHKScrcpy Helper的文件放置在同一文件夹下。
+
+AHKScrcpy Helper提供ahk版本和exe版本，可自由选择。
 
 将手机用USB线连接至电脑。打开AHKScrcpy Helper，点击“启动”按钮。即可启动Scrcpy。
 
