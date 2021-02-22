@@ -21,6 +21,10 @@ AHKScrcpy Helper是一个基于AutoHotkey编写的小工具。旨在能够更加
 
 # 更新历史
 
+- 1.0.1
+
+  适配Scrcpy 1.17。
+
 - 1.0.0
 
   AHKScrcpy Helper正式发布。基于Scrcpy 1.16版本。

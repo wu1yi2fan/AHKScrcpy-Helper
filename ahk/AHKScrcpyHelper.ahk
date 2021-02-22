@@ -1,6 +1,16 @@
 ﻿SetWorkingDir %A_ScriptDir%
 SetBatchLines -1
 
+RunScrcpy() {
+sc := ComObjCreate("ScriptControl")
+sc.Language := "VBScript"
+script =
+(
+CreateObject("Wscript.Shell").Run "cmd /c scrcpy.exe --window-title ""Scrcpy Portal"" --push-target /sdcard/Download/", 0, false
+)
+sc.ExecuteStatement(script)
+}
+
 Gui Add, Tab3, x2 y1 w320 h53, 主要|更多
 Gui Tab, 1
 Gui Add, Button, x6 y25 w28 h23, ≡
@@ -24,7 +34,7 @@ Gui Show, w323 h56, AHKScrcpy Helper
 Return
 
 Button启动:
-RUN scrcpy-noconsole.exe --window-title "Scrcpy Portal" --push-target /sdcard/Download/
+RunScrcpy()
 return
 
 Button熄屏:
